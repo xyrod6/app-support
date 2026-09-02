@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Network File Browser: Conduit — Support</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<main>
+  <h1>Network File Browser: Conduit</h1>
+  <p class="sub">Support and frequently asked questions.</p>
+
+  <div class="card">
+    <strong>Need help?</strong> Get in touch through
+    <a href="https://signex.ai/contact">signex.ai/contact</a> and mention Conduit.
+    We read everything.
+  </div>
+
+  <h2>Which protocols does it support?</h2>
+  <p>WebDAV and FTP/FTPS in full — listing, streaming, preview, upload, download, rename, move,
+  delete and new folder. SMB and SFTP are not supported: iOS provides no system API for either
+  transport, and we chose not to ship a half-trusted third-party implementation on a path that
+  carries your credentials. The connection editor says so plainly rather than hiding the
+  options.</p>
+
+  <h2>Can I connect to my NAS?</h2>
+  <p>If it speaks WebDAV or FTP, yes — most NAS units, routers with USB disks, Nextcloud and
+  ordinary web hosts can enable one of the two. Look for "WebDAV" or "FTP service" in the
+  device's own settings, then add the address in Conduit.</p>
+
+  <h2>Where is my password kept?</h2>
+  <p>In the iOS Keychain, the system's encrypted credential store — never in the app's own
+  files. It is sent only to the server you typed in, and deleting a connection deletes its
+  password from the Keychain too.</p>
+
+  <h2>Why does iOS ask about the local network?</h2>
+  <p>Reaching a NAS or router on your home network requires the local-network permission. iOS
+  shows that prompt on Conduit's first connection attempt; decline it and local servers become
+  unreachable, though servers on the internet still work.</p>
+
+  <h2>Can I stream a film without downloading it?</h2>
+  <p>Yes. Media plays directly from the server in the built-in player, and documents open in
+  preview without a permanent download.</p>
+
+  <h2>What happens to a transfer if I leave the app?</h2>
+  <p>Transfers continue in the background where the protocol allows it, and Conduit remembers
+  in-flight transfers — a file that finishes arriving after the app was closed is filed, not
+  lost. One quirk to know: in the queue, failed transfers currently sort below completed ones,
+  so scroll down to find a failure.</p>
+
+  <h2>My FTP listing looks wrong or empty</h2>
+  <p>Conduit asks the server for a machine-readable listing first and falls back to parsing the
+  classic Unix and DOS formats. If your server emits something rarer, get in touch with the
+  server model and we will look at it.</p>
+
+  <footer>
+    <a href="privacy.html">Privacy Policy</a> · Conduit is made by Gray Swan Intelligence Kft.
+  </footer>
+</main>
+</body>
+</html>

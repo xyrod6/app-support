@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sleep Debt Tracker: Nightly — Support</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<main>
+  <h1>Sleep Debt Tracker: Nightly</h1>
+  <p class="sub">Support and frequently asked questions.</p>
+
+  <div class="card">
+    <strong>Need help?</strong> Get in touch through
+    <a href="https://signex.ai/contact">signex.ai/contact</a> and mention Nightly.
+    We read everything.
+  </div>
+
+  <h2>Nightly shows no sleep. Why?</h2>
+  <p>Nightly does not record sleep itself — it reads the sleep your iPhone or Apple Watch
+  already logs to the Health app. If Health has no sleep data, Nightly has nothing to show.
+  Check that sleep tracking is on (a Watch worn at night, or Sleep set up on the iPhone), and
+  that Nightly has read access under Settings › Health › Data Access &amp; Devices.</p>
+
+  <h2>How is sleep debt calculated?</h2>
+  <p>As a rolling 14-night balance against your sleep need, which you can set yourself. Nights
+  where you slept less than your need add to the debt; longer nights pay it down. It is an
+  arithmetic summary of your recorded sleep, not a medical assessment.</p>
+
+  <h2>What is the energy curve?</h2>
+  <p>An estimate of how alert you are likely to feel through today, computed from your real bed
+  and wake times using a standard two-process model of sleep pressure and body clock. It is an
+  estimate — caffeine, naps and life are not in the model.</p>
+
+  <h2>Why didn't the smart alarm wake me early?</h2>
+  <p>The smart alarm always schedules a backstop notification for the exact time you set, so it
+  cannot be missed. Ringing <em>earlier</em>, in a light sleep stage, needs live stage data —
+  in practice an Apple Watch — and the app needs to have been opened recently enough to check.
+  Without a Watch, the alarm is simply the time you set.</p>
+
+  <h2>Can I edit a night that was recorded wrongly?</h2>
+  <p>Not in Nightly — it reads Health and deliberately writes nothing back. Edit the night in
+  the Health app and Nightly will pick up the correction.</p>
+
+  <h2>My Watch and phone both recorded last night. Is it counted twice?</h2>
+  <p>No. Overlapping records from multiple sources are deduplicated before anything is
+  calculated, so a night covered by both devices counts once.</p>
+
+  <h2>Does it need an account or an internet connection?</h2>
+  <p>Neither. Everything is computed on your iPhone, offline.</p>
+
+  <footer>
+    <a href="privacy.html">Privacy Policy</a> · Nightly is made by Gray Swan Intelligence Kft.
+  </footer>
+</main>
+</body>
+</html>
